@@ -3,7 +3,7 @@ provider "aws" {
   }
 
 module "vpc" {
-  source            = "https://github.com/mmreddy1582/terraformmodules.git//vpc"
+  source            = "git::https://github.com/mmreddy1582/terraformmodules.git//vpc"
   name              = "vpc-mura-non-prod"
   env               = "nonprod"
   usage_nat         = false
